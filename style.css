@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    height: 30px;
+    width: auto;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.search-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#search-input {
+    width: 40vw;
+    min-width: 300px;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    box-shadow: 1px 1px 7px #ccc;
+}
+
+#search-button {
+    padding: 0.5rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 7px #ccc;
+}
+
+#search-button:hover {
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+#game-info {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-areas:
+        "title image image"
+        "release image image"
+        "description image image"
+        "similar image image";
+    justify-content: center;
+    width: 80dvw;
+    height: calc(80dvh - 100px);
+    gap: 1rem;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.game-card {
+    display: inline-block;
+    border-radius: 1rem;
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 7px #ccc;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.game-card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-card-similar {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
